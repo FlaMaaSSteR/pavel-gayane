@@ -5,19 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Պավել & Գայանե · Նշանադրություն · 10.10.2026 · Երևան">
 <meta property="og:title" content="Պավել & Գայանե · Pavel & Gayane">
-<meta property="og:description" content="Սիրով հրավիրում ենք Ձեզ մեր նշանադրությանը · 10.10.2026">
-<meta property="og:image" content="https://flamaasster.github.io/pavel-gayane/hero-montage.jpg">
+<meta property="og:description" content="Սիրով հրավիրում ենք Ձեզ մեր նշանադրությանը · 10.10.2026 · 17:00 · «Բաոբաբ» ռեստորան">
+<meta property="og:image" content="https://flamaasster.github.io/pavel-gayane/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
 <meta property="og:url" content="https://flamaasster.github.io/pavel-gayane/">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#ead9d3">
 <style>html{-webkit-text-size-adjust:100%}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img,video{max-width:100%}[hidden]{display:none!important}</style>
 <title>Պավել & Գայանե</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+Armenian:wght@400;500;600&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+Armenian:wght@300;400;500;600&display=swap">
+<noscript><style>#cover{display:none!important}html.sealed,html.sealed body{overflow:auto!important;height:auto!important}</style></noscript>
 <style>
 /* layout: envelope -> full-bleed watercolor hero with parallax -> alternating rose / cream / blush bands, one narrow column inside each */
 :root{
-  --rose:#a46d71; --rose-dk:#8c5a5e; --cream:#f9f5ee; --blush:#f6ebe9; --ink:#4f4446; --muted:#8f7f80; --line:#e3d2cf; --white:#fffaf6;
-  --script:"Pinyon Script","Noto Serif Armenian",cursive;
+  --rose:#a46d71; --rose-dk:#8c5a5e; --cream:#f9f5ee; --blush:#f6ebe9; --ink:#4f4446; --muted:#766668; --line:#e3d2cf; --white:#fffaf6;
+  --script:"Pinyon Script","Great Vibes","Noto Serif Armenian","Cormorant Garamond",serif;
   --serif:"Cormorant Garamond","Noto Serif Armenian",Georgia,serif;
   color-scheme:light;
 }
@@ -28,8 +34,8 @@ body{background:var(--cream);color:var(--ink);font-family:var(--serif);font-size
 button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--rose);outline-offset:2px}
 
 /* language pill */
-.lang{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));right:12px;z-index:30;display:flex;gap:2px;background:rgba(249,245,238,.85);backdrop-filter:blur(8px);border-radius:99px;padding:3px;box-shadow:0 4px 14px rgba(0,0,0,.08)}
-.lang button{font:600 11px/1 var(--serif);letter-spacing:.12em;border:0;background:none;color:var(--muted);padding:6px 10px;border-radius:99px;cursor:pointer}
+.lang{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));right:12px;z-index:60;display:flex;gap:2px;background:rgba(249,245,238,.85);backdrop-filter:blur(8px);border-radius:99px;padding:3px;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+.lang button{font:600 13px/1 var(--serif);letter-spacing:.1em;border:0;background:none;color:var(--ink);padding:10px 13px;border-radius:99px;cursor:pointer}
 .lang button[aria-pressed="true"]{background:var(--rose);color:var(--white)}
 
 /* envelope cover: handmade cotton-paper envelope, flap hinged at the top flips open, then a card fills the screen (as in the reel) */
@@ -57,7 +63,7 @@ html.sealed,html.sealed body{overflow:hidden;height:100%}
 .seal svg{width:100%;height:100%;display:block}
 .env-card{position:absolute;inset:0;z-index:6;background:#f6ebe9;opacity:0;transform:translateY(8%);transition:opacity 1.6s cubic-bezier(.37,0,.63,1) 3s,transform 2.4s cubic-bezier(.22,.8,.3,1) 3s;pointer-events:none}
 #cover.open .env-card{opacity:1;transform:none}
-.cover-hint{position:absolute;left:0;right:0;top:calc(55.5% + 36px);z-index:4;margin:0;text-align:center;font:500 .62rem/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#a07f80;transition:opacity .4s}
+.cover-hint{position:absolute;left:0;right:0;top:calc(52% + min(18.5vw,85px) + 22px);z-index:4;margin:0;padding:0 16px;text-align:center;font:italic 500 1rem/1.3 var(--serif);letter-spacing:.06em;color:#8c5a5e;transition:opacity .4s}
 #cover.open .cover-hint{opacity:0;transition:opacity 1.2s cubic-bezier(.37,0,.63,1)}
 
 /* shared section look */
@@ -68,7 +74,7 @@ section > .in{max-width:440px;margin:0 auto}
 .cream{background:var(--cream)}
 .title{font-family:var(--script);font-weight:400;font-size:clamp(2.6rem,11vw,3.2rem);line-height:1.1;margin:0;color:var(--rose)}
 .rose .title{color:var(--white)}
-.caps{font-size:.74rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin:8px 0 0}
+.caps{font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin:8px 0 0}
 .rose .caps{color:rgba(255,250,246,.8)}
 p{margin:0}
 
@@ -76,15 +82,15 @@ p{margin:0}
 .hero{min-height:92svh;display:flex;flex-direction:column;justify-content:space-between;align-items:center;overflow:hidden;color:var(--white);padding-block:18svh 9svh;background:#c9a99a}
 .hero-bg{position:absolute;inset:0 0 -20% 0;will-change:transform}
 .hero-img{width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:block;animation:kb 20s ease-in-out infinite alternate}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(70,50,45,.08),rgba(70,50,45,.18) 45%,rgba(70,50,45,.32))}
+.hero::after{content:"";position:absolute;inset:0;background:radial-gradient(90% 30% at 50% 24%,rgba(70,45,42,.42),transparent 72%),radial-gradient(100% 30% at 50% 84%,rgba(70,45,42,.46),transparent 75%),linear-gradient(180deg,rgba(70,50,45,.06),rgba(70,50,45,.14))}
 .hero .in{position:relative;z-index:1;width:100%}
-.hero .names{font-family:var(--script);font-weight:400;font-size:clamp(3.6rem,17vw,5rem);line-height:1;margin:0;text-shadow:0 2px 16px rgba(60,40,35,.45)}
+.hero .names{font-family:var(--script);font-weight:400;font-size:clamp(3.6rem,17vw,5rem);line-height:1;margin:0;text-shadow:0 1px 2px rgba(60,40,35,.55),0 2px 18px rgba(60,40,35,.5)}
 .hero .names i{display:block;font-style:normal;font-size:.55em;margin:.05em 0}
-.hero .caps{color:var(--white);font-size:.95rem;font-weight:500;letter-spacing:.2em;line-height:2.4;margin:0;text-shadow:0 1px 10px rgba(60,40,35,.5)}
+.hero .caps{color:var(--white);font-size:.95rem;font-weight:500;letter-spacing:.2em;line-height:2.4;margin:0;text-shadow:0 1px 2px rgba(60,40,35,.6),0 1px 12px rgba(60,40,35,.55)}
 .heart-line{display:flex;align-items:center;justify-content:center;gap:14px;margin:16px 0}
 .heart-line span{width:80px;height:1px;background:rgba(255,250,246,.7)}
 .heart-line svg{width:18px;height:18px}
-.hero .date{font-family:var(--script);font-size:1.9rem;letter-spacing:.06em;text-shadow:0 1px 10px rgba(60,40,35,.5)}
+.hero .date{font-family:var(--script);font-size:1.9rem;letter-spacing:.04em;font-variant-numeric:lining-nums;text-shadow:0 1px 2px rgba(60,40,35,.6),0 1px 12px rgba(60,40,35,.55)}
 .rings{display:block;width:170px;max-width:100%;height:auto;margin:0 auto 18px;filter:drop-shadow(0 4px 10px rgba(0,0,0,.25))}
 .ring{fill:none;stroke-width:4.5;stroke-linecap:round;stroke-dasharray:270;stroke-dashoffset:270}
 .go .ring{animation:draw 2.6s ease-in-out forwards}
@@ -102,12 +108,19 @@ p{margin:0}
 /* countdown */
 .count{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:28px;font-variant-numeric:tabular-nums}
 .count b{display:block;font-size:2.1rem;font-weight:400;line-height:1.1}
-.count small{font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;opacity:.8}
+.count small{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase}
+.today{font-family:var(--serif);font-size:1.4rem;font-style:italic;margin-top:20px}
 
 /* venue card */
 .card{margin-top:30px;background:var(--white);border-radius:18px;padding:30px 20px;box-shadow:0 14px 34px rgba(140,90,94,.08)}
 .map{margin-top:18px;border-radius:14px;overflow:hidden;aspect-ratio:4/3;border:1px solid var(--line);background:var(--blush)}
 .map iframe{width:100%;height:100%;border:0;display:block}
+html:lang(hy) .title{font-family:"Noto Serif Armenian",serif;font-weight:300;font-size:clamp(1.9rem,8.4vw,2.5rem);letter-spacing:.02em}
+html:lang(hy) .big-date{font-family:"Noto Serif Armenian",serif;font-weight:300;font-size:clamp(1.5rem,6.6vw,1.9rem)}
+html:lang(hy) .tl b{font-family:"Noto Serif Armenian",serif;font-weight:400;font-size:1.2rem}
+html:lang(hy) .venue{font-family:"Noto Serif Armenian",serif;font-weight:400;font-size:1.45rem}
+html:lang(hy) .hero .date{font-family:"Noto Serif Armenian",serif;font-weight:400;font-size:1.25rem;letter-spacing:.03em}
+.seal:active{transform:translate(-50%,-50%) scale(.95)}
 .hy-names{font-family:"Noto Serif Armenian",Georgia,serif!important;font-weight:400;letter-spacing:.04em}
 .badge{width:44px;height:44px;border-radius:50%;background:var(--blush);display:grid;place-items:center;margin:0 auto 12px}
 .venue{font-family:var(--script);font-size:2rem;color:var(--rose);line-height:1.2}
@@ -125,7 +138,7 @@ p{margin:0}
 .tl{position:relative;text-align:left;margin:34px auto 0;max-width:380px;display:grid;gap:30px}
 .tl::before{content:"";position:absolute;left:66px;top:4px;bottom:4px;width:1px;background:var(--line)}
 .tl > div{display:grid;grid-template-columns:52px 1fr;column-gap:30px;position:relative}
-.tl time{font-size:.85rem;letter-spacing:.08em;color:var(--muted);padding-top:4px;text-align:right}
+.tl time{font-size:1rem;letter-spacing:.06em;color:var(--ink);font-variant-numeric:lining-nums;padding-top:4px;text-align:right}
 .tl > div::after{content:"";position:absolute;left:62px;top:10px;width:9px;height:9px;border-radius:50%;background:var(--rose);box-shadow:0 0 0 4px var(--blush)}
 .tl b{font-family:var(--script);font-weight:400;font-size:1.7rem;line-height:1.1;color:var(--ink);display:block}
 .tl p{font-size:.95rem;color:var(--muted);margin-top:2px}
@@ -224,7 +237,7 @@ footer .names{font-family:var(--script);font-size:2.6rem;line-height:1.2;margin-
     <video class="hero-img" src="hero-montage.mp4" poster="hero-montage.jpg" autoplay muted loop playsinline preload="auto" disablepictureinpicture aria-hidden="true"></video>
   </div>
   <div class="in top">
-    <h1 class="names hy-names lift" style="font-size:clamp(2.7rem,12.5vw,3.8rem);line-height:1.15">Պավել<i style="font-family:var(--script)">&amp;</i>Գայանե</h1>
+    <h1 class="names hy-names lift" style="font-size:clamp(2.7rem,12.5vw,3.8rem);line-height:1.15"><span data-i="n1">Պավել</span><i style="font-family:var(--script)">&amp;</i><span data-i="n2">Գայանե</span></h1>
   </div>
   <div class="in bottom">
     <p class="caps lift l2" data-i="joy"></p>
@@ -238,7 +251,7 @@ footer .names{font-family:var(--script);font-size:2.6rem;line-height:1.2;margin-
   <div class="in">
     <h2 class="title rv" data-i="cdTitle"></h2>
     <p class="caps rv" data-i="cdSub"></p>
-    <div class="count rv" aria-live="polite">
+    <div class="count rv" id="count">
       <div><b id="cd-d">–</b><small data-i="days"></small></div>
       <div><b id="cd-h">–</b><small data-i="hours"></small></div>
       <div><b id="cd-m">–</b><small data-i="mins"></small></div>
@@ -252,7 +265,7 @@ footer .names{font-family:var(--script);font-size:2.6rem;line-height:1.2;margin-
   <div class="in">
     <h2 class="title rv" data-i="dear"></h2>
     <p class="lead rv" data-i="body"></p>
-    <p class="caps rv" data-i="quote" style="margin-top:22px;line-height:2"></p>
+    <p class="lead rv" data-i="quote" style="color:var(--rose);font-size:1.1rem;margin-top:18px"></p>
   </div>
 </section>
 
@@ -265,14 +278,14 @@ footer .names{font-family:var(--script);font-size:2.6rem;line-height:1.2;margin-
       <div class="badge"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a46d71" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div>
       <p class="venue" data-i="venue"></p>
       <p class="addr" data-i="addr"></p>
-      <p class="addr">17:00</p>
-      <div class="map"><iframe src="https://yandex.com/map-widget/v1/?ll=44.600964%2C40.187673&mode=poi&poi%5Bpoint%5D=44.600964%2C40.187673&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D130521609055&z=16" title="Baobab, Teosyan 5, Yerevan" loading="lazy" allowfullscreen></iframe></div>
+      <p class="addr" style="color:var(--rose);font-weight:600;letter-spacing:.15em;font-size:1.05rem">17:00</p>
+      <div class="map"><iframe src="https://yandex.com/map-widget/v1/?ll=44.600964%2C40.187673&mode=poi&poi%5Bpoint%5D=44.600964%2C40.187673&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D130521609055&z=16" title="Baobab, 5 Tevosyan St, Yerevan" loading="lazy" allowfullscreen></iframe></div>
       <div class="btns two">
         <a class="btn" href="https://yandex.com/maps/-/CXeLjA~g" target="_blank" rel="noopener noreferrer">Yandex Maps</a>
         <a class="btn" href="https://www.google.com/maps/search/?api=1&query=40.187673%2C44.600964" target="_blank" rel="noopener noreferrer">Google Maps</a>
       </div>
       <div class="btns">
-        <a class="btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=%D5%8A%D5%A1%D5%BE%D5%A5%D5%AC+%26+%D4%B3%D5%A1%D5%B5%D5%A1%D5%B6%D5%A5&dates=20261010T130000Z/20261010T190000Z&location=Baobab+Restaurant+Teosyan+5+Yerevan" target="_blank" rel="noopener noreferrer">
+        <a class="btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=%D5%8A%D5%A1%D5%BE%D5%A5%D5%AC%20%26%20%D4%B3%D5%A1%D5%B5%D5%A1%D5%B6%D5%A5%20%C2%B7%20%D5%86%D5%B7%D5%A1%D5%B6%D5%A1%D5%A4%D6%80%D5%B8%D6%82%D5%A9%D5%B5%D5%B8%D6%82%D5%B6%20%2F%20Pavel%20%26%20Gayane%20%C2%B7%20Engagement&dates=20261010T130000Z/20261010T190000Z&location=Baobab%20Restaurant%2C%205%20Tevosyan%20St%2C%20Yerevan" target="_blank" rel="noopener noreferrer">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
           <span data-i="cal"></span></a>
       </div>
@@ -294,7 +307,7 @@ footer .names{font-family:var(--script);font-size:2.6rem;line-height:1.2;margin-
 </section>
 
 <!-- RSVP -->
-<section class="blush" id="rsvp">
+<section class="cream" id="rsvp">
   <div class="in">
     <h2 class="title rv" data-i="rsvpTitle"></h2>
     <p class="caps rv" data-i="rsvp"></p>
@@ -307,7 +320,7 @@ footer .names{font-family:var(--script);font-size:2.6rem;line-height:1.2;margin-
         </div>
       </div>
       <label for="g-cnt"><span data-i="fCnt"></span>
-        <select id="g-cnt"><option>1</option><option>2</option><option>3</option><option>4+</option></select></label>
+        <select id="g-cnt"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></label>
       <button class="btn solid" type="submit" data-i="send"></button>
     </form>
     <div class="thanks" id="thanks" hidden>
@@ -323,55 +336,55 @@ footer .names{font-family:var(--script);font-size:2.6rem;line-height:1.2;margin-
 <footer class="rose">
   <section style="padding:0">
     <svg width="22" height="22" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 12C2 8.5 1 6.5 1 4.6A3 3 0 0 1 7 3.2a3 3 0 0 1 6 1.4C13 6.5 12 8.5 7 12z" fill="none" stroke="#fffaf6"/></svg>
-    <div class="names hy-names" style="font-size:2rem">Պավել <span style="font-family:var(--script)">&amp;</span> Գայանե</div>
-    <p class="caps">10 · 10 · 2026 · Երևան</p>
+    <div class="names hy-names" style="font-size:2rem"><span data-i="n1">Պավել</span> <span style="font-family:var(--script)">&amp;</span> <span data-i="n2">Գայանե</span></div>
+    <p class="caps" data-i="foot">10 · 10 · 2026 · ԵՐԵՎԱՆ</p>
   </section>
 </footer>
 
 <script>
 const T = {
-  hy:{hint:'Սեղմեք կնիքին՝ բացելու համար', joy:'Սիրով հրավիրում են Ձեզ<br>իրենց նշանադրությանը', dateShort:'10 հոկտեմբերի, 2026',
-    cdTitle:'Մնաց', cdSub:'մեր կյանքի ամենահատուկ օրվան', days:'Օր',hours:'Ժամ',mins:'Րոպե',secs:'Վրկ',
-    dear:'Սիրելի հյուրեր', body:'Սիրով հրավիրում ենք Ձեզ կիսելու մեզ հետ մեր կյանքի կարևորագույն և լուսավոր պահերից մեկը՝ մեր նշանադրությունը:',
+  hy:{n1:'Պավել',n2:'Գայանե',foot:'10 · 10 · 2026 · ԵՐԵՎԱՆ',
+    hint:'Հպեք կնիքին՝ բացելու համար', joy:'Սիրով հրավիրում են Ձեզ<br>իրենց նշանադրությանը', dateShort:'2026 թ. հոկտեմբերի 10 · 17:00',
+    cdTitle:'Մնաց', cdSub:'մեր ամենասպասված օրվան', days:'Օր',hours:'Ժամ',mins:'Րոպե',secs:'Վրկ', today:'Այսօր է մեր նշանադրությունը 🤍',
+    dear:'Սիրելի հյուրեր', body:'Սիրով հրավիրում ենք Ձեզ կիսելու մեզ հետ մեր կյանքի կարևորագույն և լուսավոր պահերից մեկը՝ մեր նշանադրությունը։',
     quote:'Ձեր ներկայությունը լավագույն նվերը կլինի մեզ համար',
-    venueTitle:'Վայրը', venueSub:'որտեղ կտոնենք մեր սերը', venue:'«Բաոբաբ» ռեստորան', addr:'ք. Երևան, Թեոսյան 5', cal:'Ավելացնել օրացույցում',
-    dayTag:'Նշանադրության օր', dateLong:'10 հոկտեմբերի, 2026',
-    p1:'Հյուրերի ժամանում',p1d:'Ջերմ ողջույն, ըմպելիքներ և լուսանկարներ',
+    venueTitle:'Վայրը', venueSub:'որտեղ կտոնենք մեր սերը', venue:'«Բաոբաբ» ռեստորան', addr:'ք. Երևան, Թևոսյան 5', cal:'Ավելացնել օրացույցում',
+    dayTag:'Շաբաթ · Նշանադրության օր', dateLong:'2026 թ. հոկտեմբերի 10',
+    p1:'Հյուրերի դիմավորում',p1d:'Ջերմ ողջույն, ըմպելիքներ և լուսանկարներ',
     p2:'Արարողություն',p2d:'Մատանիների փոխանակման հանդիսավոր պահը',
     p3:'Տոնական ընթրիք',p3d:'Երաժշտություն, պարեր և ուրախություն',
-    dressTag:'Դրես կոդ',dressTitle:'Գունային գամմա',dress:'Շատ ուրախ կլինենք, եթե Ձեր հագուստում գերադասեք այս նուրբ երանգները',
-    giftTag:'Նվերներ',giftTitle:'Ցանկություններ',gift:'Ձեր ներկայությունն ու ժպիտները լավագույն նվերն են: Եթե ցանկանում եք նվեր մատուցել, նախընտրում ենք ծրարով մաղթանքները:',
-    rsvpTitle:'Հաստատեք մասնակցությունը',rsvp:'Խնդրում ենք պատասխանել մինչև 9 հոկտեմբեր',
-    fName:'Անուն Ազգանուն',fAtt:'Կմասնակցե՞ք',fCnt:'Հյուրերի քանակը',yes:'Այո, սիրով',no:'Ցավոք, ոչ',send:'Ուղարկել',
-    thanks:n=>`Շնորհակալություն, ${n}: Ուղարկեք պատասխանը մեզ`, msg:(n,a,c)=>`Բարև ձեզ, ես ${n}ն եմ: ${a==='yes'?'Սիրով կմասնակցեմ':'Ցավոք, չեմ կարող մասնակցել'} (${c}):`},
-  ru:{hint:'Нажмите на печать, чтобы открыть', joy:'С радостью приглашают вас<br>на свою помолвку', dateShort:'10 октября 2026',
-    cdTitle:'Обратный отсчёт', cdSub:'до самого особенного дня', days:'Дней',hours:'Часов',mins:'Минут',secs:'Секунд',
+    rsvpTitle:'Հաստատեք մասնակցությունը',rsvp:'Խնդրում ենք պատասխանել ոչ ուշ, քան հոկտեմբերի 9-ը',
+    fName:'Անուն Ազգանուն',fAtt:'Կմասնակցե՞ք',fCnt:'Քանի՞ հոգով կգաք (Ձեզ հետ միասին)',yes:'Այո, սիրով',no:'Ցավոք, ոչ',send:'Պատասխանել',
+    thanks:n=>`Շնորհակալություն, ${n}։ Մնաց վերջին քայլը՝ սեղմեք WhatsApp և ուղարկեք հաղորդագրությունը։`,
+    msg:(n,a,c)=>a==='yes'?`Բարև Ձեզ։ Սիրով կգամ Ձեր նշանադրությանը։ Հյուրերի թիվը՝ ${c}։\n${n}`:`Բարև Ձեզ։ Ցավոք, չեմ կարողանա գալ Ձեր նշանադրությանը։\n${n}`},
+  ru:{n1:'Павел',n2:'Гаяне',foot:'10 · 10 · 2026 · Ереван',
+    hint:'Нажмите на печать, чтобы открыть', joy:'С радостью приглашают вас<br>на свою помолвку', dateShort:'10 октября 2026 · 17:00',
+    cdTitle:'Обратный отсчёт', cdSub:'до самого долгожданного дня', days:'Дни',hours:'Часы',mins:'Минуты',secs:'Секунды', today:'Сегодня наша помолвка 🤍',
     dear:'Дорогие гости', body:'Мы с радостью приглашаем вас разделить с нами один из самых важных и светлых дней в нашей жизни — нашу помолвку.',
     quote:'Ваше присутствие — лучший подарок для нас',
-    venueTitle:'Место', venueSub:'где мы отпразднуем нашу любовь', venue:'Ресторан «Баобаб»', addr:'г. Ереван, ул. Теосяна 5', cal:'Добавить в календарь',
-    dayTag:'День помолвки', dateLong:'10 октября 2026',
+    venueTitle:'Место', venueSub:'где мы отпразднуем нашу любовь', venue:'Ресторан «Баобаб»', addr:'г. Ереван, ул. Тевосяна, 5', cal:'Добавить в календарь',
+    dayTag:'Суббота · День помолвки', dateLong:'10 октября 2026',
     p1:'Сбор гостей',p1d:'Приветственные напитки и фото',
     p2:'Церемония',p2d:'Торжественный обмен кольцами',
     p3:'Праздничный ужин',p3d:'Музыка, танцы и веселье',
-    dressTag:'Дресс-код',dressTitle:'Цветовая палитра',dress:'Будем рады, если в нарядах вы выберете эти нежные оттенки',
-    giftTag:'Подарки',giftTitle:'Пожелания',gift:'Ваше присутствие и улыбки — главный подарок. Если захотите что-то подарить, мы будем рады пожеланиям в конверте.',
     rsvpTitle:'Подтвердите участие',rsvp:'Пожалуйста, ответьте до 9 октября',
-    fName:'Имя и фамилия',fAtt:'Вы придёте?',fCnt:'Сколько гостей',yes:'Да, с радостью',no:'К сожалению, нет',send:'Отправить',
-    thanks:n=>`Спасибо, ${n}! Отправьте ответ нам`, msg:(n,a,c)=>`Здравствуйте, это ${n}. ${a==='yes'?'С радостью приду':'К сожалению, не смогу прийти'} (${c}).`},
-  en:{hint:'Tap the seal to open', joy:'Joyfully invite you<br>to their engagement', dateShort:'October 10, 2026',
-    cdTitle:'Countdown', cdSub:'to the most special day', days:'Days',hours:'Hours',mins:'Mins',secs:'Secs',
+    fName:'Имя и фамилия',fAtt:'Вы придёте?',fCnt:'Сколько вас будет (вместе с вами)',yes:'Да, с радостью',no:'К сожалению, нет',send:'Ответить',
+    thanks:n=>`Спасибо, ${n}! Последний шаг: нажмите WhatsApp и отправьте сообщение.`,
+    msg:(n,a,c)=>a==='yes'?`Здравствуйте! С радостью приду на вашу помолвку. Гостей: ${c}.\n${n}`:`Здравствуйте! К сожалению, не смогу прийти на вашу помолвку.\n${n}`},
+  en:{n1:'Pavel',n2:'Gayane',foot:'10 · 10 · 2026 · Yerevan',
+    hint:'Tap the seal to open', joy:'Joyfully invite you<br>to their engagement', dateShort:'October 10, 2026 · 17:00',
+    cdTitle:'Countdown', cdSub:'to the most special day', days:'Days',hours:'Hours',mins:'Mins',secs:'Secs', today:'Today is our engagement 🤍',
     dear:'Dear guests', body:'We joyfully invite you to share one of the brightest days of our lives with us: our engagement.',
-    quote:'Your presence is the greatest gift for us',
-    venueTitle:'The Venue', venueSub:'where we will celebrate our love', venue:'Baobab Restaurant', addr:'5 Teosyan St, Yerevan', cal:'Add to calendar',
-    dayTag:'Engagement day', dateLong:'October 10, 2026',
+    quote:'Your presence is the greatest gift to us',
+    venueTitle:'The Venue', venueSub:'where we will celebrate our love', venue:'Baobab Restaurant', addr:'5 Tevosyan St, Yerevan', cal:'Add to calendar',
+    dayTag:'Saturday · Engagement day', dateLong:'October 10, 2026',
     p1:'Guest arrival',p1d:'Welcome drinks and photos',
     p2:'Ceremony',p2d:'The exchange of rings',
     p3:'Celebration dinner',p3d:'Music, dancing and joy',
-    dressTag:'Dress code',dressTitle:'Colour palette',dress:'We would love to see you in these soft shades',
-    giftTag:'Gifts',giftTitle:'Wishes',gift:'Your presence and smiles are the best gift. If you wish to give something, a card in an envelope is perfect.',
-    rsvpTitle:'Confirm your presence',rsvp:'Kindly reply by October 9',
-    fName:'Full name',fAtt:'Will you attend?',fCnt:'Number of guests',yes:'Joyfully accept',no:'Regretfully decline',send:'Send RSVP',
-    thanks:n=>`Thank you, ${n}! Send your reply to us`, msg:(n,a,c)=>`Hello, this is ${n}. ${a==='yes'?'I joyfully accept':'Sadly I can’t attend'} (${c}).`}
+    rsvpTitle:'Kindly RSVP',rsvp:'Kindly reply by October 9',
+    fName:'Full name',fAtt:'Will you attend?',fCnt:'Number of guests (including you)',yes:'Joyfully accept',no:'Regretfully decline',send:'Reply',
+    thanks:n=>`Thank you, ${n}! One last step: tap WhatsApp and send the message.`,
+    msg:(n,a,c)=>a==='yes'?`Hello! I will gladly come to your engagement. Guests: ${c}.\n${n}`:`Hello! Unfortunately I can't come to your engagement.\n${n}`}
 };
 let lang = 'hy';
 function setLang(l){
@@ -396,11 +409,13 @@ const hero = document.getElementById('hero'), cover = document.getElementById('c
 try { history.scrollRestoration = 'manual'; } catch(e) {}
 document.documentElement.classList.add('sealed');
 scrollTo(0, 0);
-document.getElementById('open').onclick = () => {
+// tap anywhere on the envelope opens it once; play() inside the tap unlocks the video on iPhone and in-app browsers
+cover.addEventListener('click', () => {
+  const hv = hero.querySelector('video'); if (hv) hv.play().catch(() => {});
   scrollTo(0, 0);
   cover.classList.add('open');
-  setTimeout(() => { scrollTo(0, 0); document.documentElement.classList.remove('sealed'); cover.classList.add('gone'); hero.classList.add('go'); const hv = hero.querySelector('video'); if (hv) { hv.currentTime = 0; hv.play().catch(() => {}); } }, 4800);
-};
+  setTimeout(() => { scrollTo(0, 0); document.documentElement.classList.remove('sealed'); cover.classList.add('gone'); hero.classList.add('go'); if (hv) { hv.currentTime = 0; hv.play().catch(() => {}); } }, still ? 200 : 4800);
+}, {once:true});
 if (still) hero.classList.add('go');
 
 // hero parallax
@@ -422,25 +437,28 @@ if (!still && 'IntersectionObserver' in window) {
 // countdown to 10.10.2026 17:00 Yerevan
 const target = new Date('2026-10-10T17:00:00+04:00');
 const pad = n => String(n).padStart(2,'0');
+let cdTimer;
 function tick(){
   const ms = Math.max(0, target - Date.now());
+  if (!ms) { const c = document.getElementById('count'); c.className = 'today'; c.setAttribute('data-i','today'); c.textContent = T[lang].today; clearInterval(cdTimer); return; }
   document.getElementById('cd-d').textContent = pad(Math.floor(ms/864e5));
   document.getElementById('cd-h').textContent = pad(Math.floor(ms/36e5)%24);
   document.getElementById('cd-m').textContent = pad(Math.floor(ms/6e4)%60);
   document.getElementById('cd-s').textContent = pad(Math.floor(ms/1e3)%60);
 }
-tick(); setInterval(tick, 1000);
+cdTimer = setInterval(tick, 1000); tick();
 
-// rsvp: the frame blocks popups, so the guest gets ready-made links
+// rsvp: replies go to this WhatsApp number (digits only, with country code, no +), e.g. '37491234567'. Empty = the guest picks the chat.
+const OWNER_WHATSAPP = '';
 document.getElementById('rsvp-form').addEventListener('submit', e => {
   e.preventDefault();
   const n = document.getElementById('g-name').value.trim();
   const a = document.querySelector('input[name="att"]:checked').value, c = document.getElementById('g-cnt').value;
   const m = encodeURIComponent(T[lang].msg(n, a, c));
   document.getElementById('thanks-text').textContent = T[lang].thanks(n);
-  document.getElementById('wa').href = 'https://api.whatsapp.com/send?text=' + m;
+  document.getElementById('wa').href = (OWNER_WHATSAPP ? 'https://wa.me/' + OWNER_WHATSAPP + '?text=' : 'https://api.whatsapp.com/send?text=') + m;
   document.getElementById('tg').href = 'https://t.me/share/url?url=%20&text=' + m;
-  document.getElementById('thanks').hidden = false;
+  const th = document.getElementById('thanks'); th.hidden = false; th.scrollIntoView({behavior: still ? 'auto' : 'smooth', block:'center'});
 });
 
 // floating hearts
@@ -448,7 +466,7 @@ const cv = document.getElementById('hearts'), x = cv.getContext('2d');
 let W, H; const P = [];
 function size(){ W = cv.width = innerWidth; H = cv.height = innerHeight; }
 size(); addEventListener('resize', size);
-for (let i = 0; i < 20; i++) P.push({x:Math.random()*W, y:Math.random()*H, s:5+Math.random()*7, v:.15+Math.random()*.35, a:Math.random()*6, o:.1+Math.random()*.18});
+for (let i = 0; i < 12; i++) P.push({x:Math.random()*W, y:Math.random()*H, s:5+Math.random()*6, v:.12+Math.random()*.28, a:Math.random()*6, o:.06+Math.random()*.1});
 function heart(s){ x.beginPath(); x.moveTo(0,s*.3); x.bezierCurveTo(-s,-s*.4,-s*.4,-s,0,-s*.35); x.bezierCurveTo(s*.4,-s,s,-s*.4,0,s*.3); x.fill(); }
 function frame(){
   x.clearRect(0,0,W,H);
