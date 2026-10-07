@@ -55,8 +55,8 @@ html.sealed,html.sealed body{overflow:hidden;height:100%}
 #cover.open .flap{transform:rotateX(178deg)}
 .seal{position:absolute;left:50%;top:100%;width:min(37vw,170px);height:min(37vw,170px);transform:translate(-50%,-50%);border:0;padding:0;background:none;cursor:pointer;backface-visibility:hidden;-webkit-backface-visibility:hidden;filter:drop-shadow(0 6px 8px rgba(100,80,60,.25)) drop-shadow(0 1px 1px rgba(100,80,60,.25))}
 .seal svg{width:100%;height:100%;display:block}
-.card{position:absolute;inset:0;z-index:6;background:#f6ebe9;opacity:0;transform:translateY(8%);transition:opacity 1.6s cubic-bezier(.37,0,.63,1) 3s,transform 2.4s cubic-bezier(.22,.8,.3,1) 3s;pointer-events:none}
-#cover.open .card{opacity:1;transform:none}
+.env-card{position:absolute;inset:0;z-index:6;background:#f6ebe9;opacity:0;transform:translateY(8%);transition:opacity 1.6s cubic-bezier(.37,0,.63,1) 3s,transform 2.4s cubic-bezier(.22,.8,.3,1) 3s;pointer-events:none}
+#cover.open .env-card{opacity:1;transform:none}
 .cover-hint{position:absolute;left:0;right:0;top:calc(55.5% + 36px);z-index:4;margin:0;text-align:center;font:500 .62rem/1 "Helvetica Neue",Arial,sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#a07f80;transition:opacity .4s}
 #cover.open .cover-hint{opacity:0;transition:opacity 1.2s cubic-bezier(.37,0,.63,1)}
 
@@ -106,6 +106,9 @@ p{margin:0}
 
 /* venue card */
 .card{margin-top:30px;background:var(--white);border-radius:18px;padding:30px 20px;box-shadow:0 14px 34px rgba(140,90,94,.08)}
+.map{margin-top:18px;border-radius:14px;overflow:hidden;aspect-ratio:4/3;border:1px solid var(--line);background:var(--blush)}
+.map iframe{width:100%;height:100%;border:0;display:block}
+.hy-names{font-family:"Noto Serif Armenian",Georgia,serif!important;font-weight:400;letter-spacing:.04em}
 .badge{width:44px;height:44px;border-radius:50%;background:var(--blush);display:grid;place-items:center;margin:0 auto 12px}
 .venue{font-family:var(--script);font-size:2rem;color:var(--rose);line-height:1.2}
 .addr{color:var(--muted);font-size:.95rem;margin-top:4px}
@@ -199,14 +202,14 @@ footer .names{font-family:var(--script);font-size:2.6rem;line-height:1.2;margin-
             <path d="M48 82c6-10 14-22 26-40"/>
             <path d="M58 66c-6-1-9-5-9-9 5 0 8 3 9 9zM63 59c6-1 9-5 9-9-5 0-8 3-9 9zM55 72c-5 1-9-1-11-5 4-2 8-1 11 5zM67 51c-1-5 1-9 5-11 2 4 1 8-5 11z"/>
           </g>
-          <text x="44" y="56" font-family="Pinyon Script,cursive" font-size="26" fill="#f6e7e3">P</text>
-          <text x="66" y="84" font-family="Pinyon Script,cursive" font-size="26" fill="#f6e7e3">G</text>
+          <text x="44" y="56" font-family="Noto Serif Armenian,serif" font-size="20" fill="#f6e7e3">Պ</text>
+          <text x="66" y="84" font-family="Noto Serif Armenian,serif" font-size="20" fill="#f6e7e3">Գ</text>
         </svg>
       </button>
     </div>
   </div>
   <p class="cover-hint" data-i="hint"></p>
-  <div class="card cotton" style="background-color:#f6ebe9"></div>
+  <div class="env-card cotton" style="background-color:#f6ebe9"></div>
 </div>
 
 <div class="lang" role="group" aria-label="Language">
@@ -221,7 +224,7 @@ footer .names{font-family:var(--script);font-size:2.6rem;line-height:1.2;margin-
     <video class="hero-img" src="hero-montage.mp4" poster="hero-montage.jpg" autoplay muted loop playsinline preload="auto" disablepictureinpicture aria-hidden="true"></video>
   </div>
   <div class="in top">
-    <h1 class="names lift">Pavel<i>&amp;</i>Gayane</h1>
+    <h1 class="names hy-names lift" style="font-size:clamp(2.7rem,12.5vw,3.8rem);line-height:1.15">Պավել<i style="font-family:var(--script)">&amp;</i>Գայանե</h1>
   </div>
   <div class="in bottom">
     <p class="caps lift l2" data-i="joy"></p>
@@ -263,12 +266,13 @@ footer .names{font-family:var(--script);font-size:2.6rem;line-height:1.2;margin-
       <p class="venue" data-i="venue"></p>
       <p class="addr" data-i="addr"></p>
       <p class="addr">17:00</p>
+      <div class="map"><iframe src="https://yandex.com/map-widget/v1/?ll=44.600964%2C40.187673&mode=poi&poi%5Bpoint%5D=44.600964%2C40.187673&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D130521609055&z=16" title="Baobab, Teosyan 5, Yerevan" loading="lazy" allowfullscreen></iframe></div>
       <div class="btns two">
         <a class="btn" href="https://yandex.com/maps/-/CXeLjA~g" target="_blank" rel="noopener noreferrer">Yandex Maps</a>
-        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Baobab+Restaurant+Teosyan+5+Yerevan" target="_blank" rel="noopener noreferrer">Google Maps</a>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=40.187673%2C44.600964" target="_blank" rel="noopener noreferrer">Google Maps</a>
       </div>
       <div class="btns">
-        <a class="btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Pavel+%26+Gayane+Engagement&dates=20261010T130000Z/20261010T190000Z&location=Baobab+Restaurant+Teosyan+5+Yerevan" target="_blank" rel="noopener noreferrer">
+        <a class="btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=%D5%8A%D5%A1%D5%BE%D5%A5%D5%AC+%26+%D4%B3%D5%A1%D5%B5%D5%A1%D5%B6%D5%A5&dates=20261010T130000Z/20261010T190000Z&location=Baobab+Restaurant+Teosyan+5+Yerevan" target="_blank" rel="noopener noreferrer">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
           <span data-i="cal"></span></a>
       </div>
@@ -286,31 +290,6 @@ footer .names{font-family:var(--script);font-size:2.6rem;line-height:1.2;margin-
       <div class="rv"><time>18:00</time><span><b data-i="p2"></b><p data-i="p2d"></p></span></div>
       <div class="rv"><time>19:00</time><span><b data-i="p3"></b><p data-i="p3d"></p></span></div>
     </div>
-  </div>
-</section>
-
-<!-- DRESS CODE -->
-<section class="cream">
-  <div class="in">
-    <h2 class="title rv" data-i="dressTitle"></h2>
-    <p class="caps rv" data-i="dressTag"></p>
-    <p class="text rv" data-i="dress"></p>
-    <div class="swatches rv">
-      <span><i style="background:#f3e6dc"></i>Nude</span>
-      <span><i style="background:#d9c4b0"></i>Beige</span>
-      <span><i style="background:#9c7b6a"></i>Bronze</span>
-      <span><i style="background:#5c4a3e"></i>Mocha</span>
-      <span><i style="background:#382e2b"></i>Classic</span>
-    </div>
-  </div>
-</section>
-
-<!-- GIFTS -->
-<section class="cream" style="padding-top:0">
-  <div class="in">
-    <h2 class="title rv" data-i="giftTitle"></h2>
-    <p class="caps rv" data-i="giftTag"></p>
-    <p class="text rv" data-i="gift"></p>
   </div>
 </section>
 
@@ -344,8 +323,8 @@ footer .names{font-family:var(--script);font-size:2.6rem;line-height:1.2;margin-
 <footer class="rose">
   <section style="padding:0">
     <svg width="22" height="22" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 12C2 8.5 1 6.5 1 4.6A3 3 0 0 1 7 3.2a3 3 0 0 1 6 1.4C13 6.5 12 8.5 7 12z" fill="none" stroke="#fffaf6"/></svg>
-    <div class="names">Pavel &amp; Gayane</div>
-    <p class="caps">10 · 10 · 2026 · Yerevan</p>
+    <div class="names hy-names" style="font-size:2rem">Պավել <span style="font-family:var(--script)">&amp;</span> Գայանե</div>
+    <p class="caps">10 · 10 · 2026 · Երևան</p>
   </section>
 </footer>
 
