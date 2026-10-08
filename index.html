@@ -6,7 +6,7 @@
 <meta name="description" content="Պավել & Գայանե · Նշանադրություն · 10.10.2026 · Երևան">
 <meta property="og:title" content="Պավել & Գայանե · Pavel & Gayane">
 <meta property="og:description" content="Սիրով հրավիրում ենք Ձեզ մեր նշանադրությանը · 10.10.2026 · 17:00 · «Բաոբաբ» ռեստորան">
-<meta property="og:image" content="https://flamaasster.github.io/pavel-gayane/og-rings.jpg">
+<meta property="og:image" content="https://flamaasster.github.io/pavel-gayane/og-rings2.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:type" content="image/jpeg">
@@ -234,7 +234,7 @@ footer .names{font-family:var(--script);font-size:2.6rem;line-height:1.2;margin-
 <!-- HERO -->
 <section class="hero" id="hero">
   <div class="hero-bg" id="hero-bg">
-    <video class="hero-img" src="hero-rings.mp4" poster="hero-rings.jpg" muted playsinline preload="auto" disablepictureinpicture aria-hidden="true"></video>
+    <video class="hero-img" src="hero-rings2.mp4" poster="hero-rings2.jpg" muted playsinline preload="auto" disablepictureinpicture aria-hidden="true"></video>
   </div>
   <div class="in top">
     <h1 class="names hy-names lift" style="font-size:clamp(2.7rem,12.5vw,3.8rem);line-height:1.15"><span data-i="n1">Պավել</span><i style="font-family:var(--script)">&amp;</i><span data-i="n2">Գայանե</span></h1>
@@ -411,10 +411,13 @@ document.documentElement.classList.add('sealed');
 scrollTo(0, 0);
 // tap anywhere on the envelope opens it once; play() inside the tap unlocks the video on iPhone and in-app browsers
 cover.addEventListener('click', () => {
-  const hv = hero.querySelector('video'); if (hv) hv.play().catch(() => {});
+  // unlock playback inside the tap (iPhone / in-app browsers), then hold on the first frame until the envelope is gone.
+  // The pause only applies while the real start has not happened yet, otherwise a late promise would stop the clip mid-way.
+  let started = false;
+  const hv = hero.querySelector('video'); if (hv) { hv.play().then(() => { if (!started) { hv.pause(); hv.currentTime = 0; } }).catch(() => {}); }
   scrollTo(0, 0);
   cover.classList.add('open');
-  setTimeout(() => { scrollTo(0, 0); document.documentElement.classList.remove('sealed'); cover.classList.add('gone'); hero.classList.add('go'); if (hv) { hv.currentTime = 0; hv.play().catch(() => {}); } }, still ? 200 : 4800);
+  setTimeout(() => { scrollTo(0, 0); document.documentElement.classList.remove('sealed'); cover.classList.add('gone'); hero.classList.add('go'); if (hv) { started = true; hv.currentTime = 0; hv.play().catch(() => {}); } }, still ? 200 : 4300);
 }, {once:true});
 if (still) hero.classList.add('go');
 
